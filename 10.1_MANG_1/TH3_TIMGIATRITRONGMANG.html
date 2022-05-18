@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6, -1]
+    let result = true
+    while (result) {
+        let num = +prompt("Nhap vao 1 so bat ky: ")
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === num) {
+                alert("Gia tri ban nhap la gia tri thu " + i + " trong mang.")
+                result = false
+                break
+            }
+        }
+        if (result == true) {
+            alert("Gia tri ban nhap k nam trong mang.")
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    ///BAI 1
+    // let myColor = ["Red","Green","White","Black"]
+    // // let arr = myColor.join()
+    // let arr = myColor.toString()
+    // document.write(arr)
+    /// BAI 2
+    // let data = prompt("Nhap day so: ")
+    // let arr = data.split("")
+    // let result = ""
+    // for (let i=0;i<arr.length;i++) {
+    //     if (arr[i]%2==0 && arr[i+1]%2==0) {
+    //         result += arr[i] + "-"
+    //     } else {
+    //         result += arr[i]
+    //     }
+    // }
+    // document.write(result)
+
+    ///BAI 3
+    let text = prompt("Nhap vao chuoi bat ky (Bao gom ca chua hoa va chu thuong)")
+    let upper = "QWERTYUIOPLKJHGFDSAZXCVBNM"
+    let lower = "qwertyuioplkjhgfdsazxcvbnm"
+    let result = ""
+    for (let i=0;i<text.length;i++) {
+        if (upper.indexOf(text[i])!==-1) {
+            result += text[i].toLowerCase()
+        } else if (lower.indexOf(text[i])!==-1) {
+            result += text[i].toUpperCase()
+        } else {
+            result += text[i]
+        }
+    }
+    document.write(result)
+
+
+
+</script>
+</html>

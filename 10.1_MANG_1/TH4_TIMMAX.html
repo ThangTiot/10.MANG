@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let arr = [0,8,2,6,9,1,4]
+  let max = arr[0]
+  let index
+  for (let i=0; i<arr.length;i++) {
+      if (max<arr[i]) {
+          max = arr[i]
+          index = i
+      }
+  }
+  document.write("Gia tri lon nhat trong mang la: " + max + " <br> Tai vi tri: " + index)
+</script>
+</html>

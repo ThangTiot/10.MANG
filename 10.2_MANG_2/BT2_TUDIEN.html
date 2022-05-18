@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TU DIEN</title>
+</head>
+<body>
+<label>Nhap tu muon dich: </label>
+<input type="text" id="data">
+<button onclick="dich()">Dich</button>
+<p id="result"></p>
+</body>
+<script>
+    let english = ["Dog", "Cat", "Apple", "Flower", "Bird"]
+    let vn = ["Cho", "Meo", "Tao", "Hoa", "Chim"]
+
+    function dich() {
+        let data = document.getElementById("data").value
+        for (let i = 0; i < english.length; i++) {
+            if (data === english[i]) {
+                document.getElementById("result").innerHTML = vn[i]
+                break
+            } else if (i === (english.length - 1)) {
+                alert("Tu ban dich k co")
+            }
+        }
+    }
+</script>
+</html>
